@@ -1,0 +1,146 @@
+.h1 {
+  margin: 0;
+  height: 37px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.textComponent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 13px 0 0;
+}
+.div {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 130%;
+  color: var(--color-darkslategray-100);
+  text-align: center;
+}
+.div1,
+.textComponentParent {
+  font-family: var(--font-ubuntu-condensed);
+  text-align: left;
+}
+.textComponentParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+}
+.div1 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+}
+
+.input {
+  background-color: rgb(192, 162, 79);
+  color: black;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  height: 25px;
+}
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-black);
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.div2 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-ubuntu-condensed);
+  color: var(--color-white);
+  text-align: left;
+}
+.btn1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-black);
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.div3 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-ubuntu-condensed);
+  color: var(--color-white);
+  text-align: left;
+}
+.btn2 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs) 21px var(--padding-3xs) var(--padding-xl);
+  background-color: var(--color-black);
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.frameButton,
+.loginFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.frameButton {
+  align-items: flex-start;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-8xs);
+  cursor: pointer;
+  width: 220px;
+}
+.loginFrame {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-bisque);
+  overflow: hidden;
+  align-items: center;
+  padding: 97px var(--padding-xl) 176px;
+  box-sizing: border-box;
+  gap: var(--gap-65xl);
+  min-height: 100dvh;
+}
+
+.loginPage {
+  display: flex;
+  justify-content: center;
+  min-width: 100vw;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

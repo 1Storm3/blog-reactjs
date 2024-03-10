@@ -1,0 +1,226 @@
+.stories {
+  position: relative;
+}
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.frameChild {
+  width: 100px;
+  height: 150px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-black);
+  display: none;
+}
+.plusIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.plusWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 14px 0 var(--padding-3xs);
+}
+.addNew {
+  position: relative;
+  z-index: 1;
+}
+.rectangleParent {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-13xl) 24px var(--padding-13xl) 28px;
+  gap: 15px;
+}
+.buttonFrameIcon,
+.buttonIconFab,
+.logoSquareIcon,
+.topNavIcon {
+  align-self: stretch;
+  width: 100px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  max-height: 100%;
+  object-fit: cover;
+  min-height: 150px;
+}
+.addFrame,
+.dAsset,
+.frameParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-3xs);
+}
+.addFrame,
+.dAsset {
+  box-sizing: border-box;
+}
+.addFrame {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  overflow-x: auto;
+}
+
+@media (min-width: 1200px) {
+  .addFrame::-webkit-scrollbar {
+    height: 5px; /* Ширина скроллбара */
+  }
+
+  /* Затем трек (основная часть скроллбара) */
+  ::-webkit-scrollbar-track {
+    background: none; /* Цвет трека */
+  }
+
+  /* Теперь thumb (ползунок) */
+  ::-webkit-scrollbar-thumb {
+    background: #0000004f; /* Цвет ползунка */
+    border-radius: 10px;
+    width: 8px; /* Скругление углов ползунка */
+  }
+
+  /* При наведении на thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Изменение цвета при наведении */
+  }
+}
+.dAsset {
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: 15px;
+  gap: var(--gap-3xs);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-ubuntu-condensed);
+}
+.frameIcon {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.evgenyStorm,
+.frameIcon,
+.hourAgo {
+  position: relative;
+}
+.hourAgo {
+  width: 52px;
+  font-size: var(--font-size-xs);
+  color: var(--color-gray);
+  display: inline-block;
+}
+.profile,
+.timeStamp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.profile {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-3xs);
+}
+.rectangleShapeIcon {
+  height: 150px;
+  width: 100px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  object-fit: cover;
+}
+.omgCheckOut {
+  height: 32px;
+  flex: 1;
+  position: relative;
+  display: inline-block;
+}
+.backgroundFrame,
+.monotoneAdd,
+.page {
+  display: flex;
+  justify-content: flex-start;
+}
+.backgroundFrame {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-3xs);
+  text-align: left;
+}
+.monotoneAdd,
+.page {
+  flex-direction: column;
+}
+.monotoneAdd {
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-white);
+  align-items: flex-start;
+  padding: var(--padding-xl) var(--padding-mini);
+  gap: var(--gap-3xs);
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-ubuntu-condensed);
+}
+.page {
+  width: clamp(300px, 100vw, 800px);
+  margin: 0 auto;
+  background-color: var(--color-bisque);
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-xl) var(--padding-xl) 85px;
+  box-sizing: border-box;
+  gap: 20px;
+  min-height: 100dvh;
+}
+.btn {
+  padding: 10px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #d32f2f;
+}
+
+.btn:focus {
+  outline: none;
+}

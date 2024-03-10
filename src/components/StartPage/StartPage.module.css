@@ -1,0 +1,169 @@
+.subHeaderFrameChild {
+  position: absolute;
+  height: 20%;
+  bottom: 0;
+  left: 249px;
+  border-radius: 50%;
+  background-color: #c57020;
+  width: 248px;
+}
+
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100dvh;
+  background-color: var(--color-bisque);
+  overflow: hidden;
+}
+
+.h1 {
+  margin: 0;
+  height: 37px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.nameText {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-14xl) 0 var(--padding-xl);
+}
+.div {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 130%;
+  color: var(--color-darkslategray-100);
+  text-align: center;
+}
+.subtextFrame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.email {
+  width: 146px;
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-ubuntu-condensed);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: var(--padding-xl);
+  padding-right: var(--padding-xl);
+}
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-black);
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.div1 {
+  width: 172px;
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-ubuntu-condensed);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: var(--padding-xl);
+  padding-right: var(--padding-xl);
+}
+.btn1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-black);
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.google {
+  width: 154px;
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-ubuntu-condensed);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: var(--padding-xl);
+  padding-right: var(--padding-xl);
+}
+.btn2,
+.signInButtonGroup {
+  align-self: stretch;
+  display: flex;
+  cursor: pointer;
+}
+.btn2 {
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-black);
+  border-radius: var(--br-7xs);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.signInButtonGroup {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+  z-index: 2;
+}
+.span {
+  color: var(--color-chocolate-100);
+}
+.div2 {
+  width: 186px;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: var(--padding-xl);
+  padding-right: var(--padding-xl);
+  cursor: pointer;
+  z-index: 2;
+}
+.loginButtonsFrame,
+.mainTextFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.loginButtonsFrame {
+  align-self: stretch;
+  align-items: center;
+  gap: var(--gap-5xl);
+  font-size: var(--font-size-sm);
+}
+.mainTextFrame {
+  display: flex;
+  width: 260px;
+  align-items: flex-start;
+  gap: var(--gap-65xl);
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-ubuntu-condensed);
+}

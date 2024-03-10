@@ -1,0 +1,38 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.div,
+.div1,
+.icon {
+  position: relative;
+}
+.div1 {
+  font-size: var(--font-size-base);
+  color: var(--color-darkslategray-100);
+}
+.notification,
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text {
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.notification {
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-white);
+  justify-content: space-between;
+  padding: var(--padding-mini) var(--padding-24xl) var(--padding-mini)
+    var(--padding-mini);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-ubuntu-condensed);
+  scroll-snap-align: start;
+}

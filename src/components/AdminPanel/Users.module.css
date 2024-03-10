@@ -1,0 +1,111 @@
+.delIcon,
+.stormilios,
+.users {
+  position: relative;
+}
+.delIcon {
+  height: 6px;
+  width: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameSet,
+.frameSet1,
+.frameSetWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frameSet,
+.frameSetWrapper {
+  align-self: stretch;
+  justify-content: space-between;
+}
+.frameSetWrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.delIcon1,
+.stormilios1 {
+  position: relative;
+}
+.delIcon1 {
+  height: 6px;
+  width: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.delIconWrapper,
+.frameParent,
+.frameWrapper,
+.stormiliosParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frameParent,
+.frameWrapper,
+.stormiliosParent {
+  align-self: stretch;
+  justify-content: space-between;
+}
+.frameParent,
+.frameWrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  gap: var(--gap-8xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-100);
+}
+
+.userbtn {
+  cursor: pointer;
+  border: 0;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: var(--br-9xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.div1 {
+  position: relative;
+}
+.text1 {
+  border-radius: var(--br-9xs);
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-9xs) var(--padding-11xs);
+}
+.fRAME,
+.textParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-200);
+}
+.fRAME {
+  border-radius: var(--br-7xs);
+  background-color: var(--color-white);
+  flex-direction: column;
+  padding: var(--padding-mini);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-ubuntu-condensed);
+}
