@@ -11,7 +11,7 @@ const Users: FunctionComponent = () => {
 
   const getUsers = async () => {
     try {
-      const response = await fetch("http://localhost:13000/api/admin/users");
+      const response = await fetch("http://localhost/api/admin/users");
       const data = await response.json();
       setUsers(data);
     } catch (error) {

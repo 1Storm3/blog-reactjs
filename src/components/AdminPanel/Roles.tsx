@@ -7,7 +7,7 @@ const Roles: FunctionComponent = () => {
 
   const handleSave = async () => {
     try {
-      const response = await fetch('http://localhost:13000/api/admin/addRole', {
+      const response = await fetch('http://localhost/api/admin/addRole', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

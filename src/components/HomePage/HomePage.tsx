@@ -27,7 +27,7 @@ const HomePage: FunctionComponent = () => {
     const fetchPosts = async () => {
       try {
         const responsePosts = await fetch(
-          "http://localhost:13000/api/posts"
+          "http://localhost/api/posts"
         );
         if (!responsePosts.ok) {
           throw new Error("Ошибка при получении");
@@ -36,7 +36,7 @@ const HomePage: FunctionComponent = () => {
         const postsData = await responsePosts.json();
         setPosts(postsData);
         const responseUser = await fetch(
-          `http://localhost:13000/api/user/${postsData[0].author}`
+          `http://localhost/api/user/${postsData[0].author}`
         );
         const userData = await responseUser.json();
         setAuthor(userData.username);
@@ -52,7 +52,7 @@ const HomePage: FunctionComponent = () => {
   };
   const handleAdminAuth = useCallback(async () => {
     try {
-      const response = await fetch("http://localhost:13000/api/admin/posts", {
+      const response = await fetch("http://localhost/api/admin/posts", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
